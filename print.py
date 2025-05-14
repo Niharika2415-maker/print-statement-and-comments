@@ -1,0 +1,5 @@
+print("niharika")
+print(11)
+print("welcome to coding\n")
+print("year",2025)
+print("niharika",end="!")
