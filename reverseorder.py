@@ -1,4 +1,10 @@
-num= int(input("enter a number"))
-print("numbers from {0}to{1} are".format(num,1))
-for i in range (num,0,-1):
-    print(i)
+number = input("Enter a number: ")
+if number.startswith('-'):
+    number = number[1:]
+count = 0
+index = 0
+while index < len(number):
+    if number[index].isdigit():
+        count += 1
+    index += 1
+print("Number of digits:", count)
