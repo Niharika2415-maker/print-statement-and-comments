@@ -16,6 +16,7 @@ screen= pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Space Invader")
 icon= pygame.image.load('ufo.png')
 pygame.display.set_icon(icon)
+background= pygame.image.load("spacebg.png")
 playerImg= pygame.image.load('player.png')
 playerX= PLAYER_START_X
 playerY= PLAYER_START_Y
@@ -63,7 +64,7 @@ def isCollision(enemyX, enemyY, bulletX, bulletY):
 running= True
 while running:
     screen.fill((0,0,0))
-    screen.blit(background,(0,0))
+    screen.blit(background, (0,0))
 for event in pygame.event.get():
     if event.type==pygame.QUIT:
         running==False
